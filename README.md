@@ -70,11 +70,10 @@ General questions about the MQTT protocol are discussed in the [MQTT Google Grou
 
 There is much more information available via the [MQTT community site](http://mqtt.org).
 
-
+***
 ADD specify bind client ip set to overrun 65535 client size in one pc.
 
 (增加可以指定ip去突破单机65535个客户端连接)
-
 in main function add:	
 ```
         mqtt.IPSETS = append(mqtt.IPSETS,"192.168.12.238")

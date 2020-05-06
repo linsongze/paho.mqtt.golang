@@ -69,3 +69,16 @@ Discussion of the Paho clients takes place on the [Eclipse paho-dev mailing list
 General questions about the MQTT protocol are discussed in the [MQTT Google Group](https://groups.google.com/forum/?hl=en-US&fromgroups#!forum/mqtt).
 
 There is much more information available via the [MQTT community site](http://mqtt.org).
+
+
+ADD specify bind client ip set to overrun 65535 client size in one pc.
+
+(增加可以指定ip去突破单机65535个客户端连接)
+
+in main function add:	
+```
+        mqtt.IPSETS = append(mqtt.IPSETS,"192.168.12.238")
+	mqtt.IPSETS = append(mqtt.IPSETS,"192.168.12.241")
+	mqtt.IPSETS = append(mqtt.IPSETS,"192.168.12.243")
+	mqtt.IPSETS = append(mqtt.IPSETS,"192.168.12.246")
+```
